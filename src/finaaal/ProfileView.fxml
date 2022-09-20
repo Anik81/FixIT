@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finaaal.ProfileViewController">
+   <children>
+      <AnchorPane fx:id="anchorPane3" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" styleClass="about-bg" stylesheets="@style.css">
+         <children>
+            <ImageView fitHeight="415.0" fitWidth="340.0" layoutX="85.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="108.0" fitWidth="357.0" layoutX="715.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@profile.png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="685.0" layoutY="168.0" prefHeight="443.0" prefWidth="417.0" style="-fx-background-color: #fff; -fx-background-radius: 25px;">
+               <children>
+                  <Label layoutX="18.0" layoutY="74.0" text="Name: ">
+                     <font>
+                        <Font name="Century Gothic Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="22.0" layoutY="142.0" text="E mail:">
+                     <font>
+                        <Font name="Century Gothic Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="26.0" layoutY="199.0" text="Area:">
+                     <font>
+                        <Font name="Century Gothic Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="18.0" layoutY="256.0" text="User Name:">
+                     <font>
+                        <Font name="Century Gothic Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="profuleName" editable="false" layoutX="90.0" layoutY="70.0" prefHeight="31.0" prefWidth="308.0">
+                     <font>
+                        <Font name="Century Gothic Bold Italic" size="18.0" />
+                     </font></JFXTextField>
+                  <JFXTextField fx:id="profileMail" editable="false" layoutX="96.0" layoutY="138.0" prefHeight="31.0" prefWidth="308.0">
+                     <font>
+                        <Font name="Century Gothic Bold Italic" size="18.0" />
+                     </font></JFXTextField>
+                  <JFXTextField fx:id="profileArea" layoutX="96.0" layoutY="195.0" prefHeight="31.0" prefWidth="308.0">
+                     <font>
+                        <Font name="Century Gothic Bold Italic" size="18.0" />
+                     </font></JFXTextField>
+                  <JFXTextField fx:id="ProfileUser" layoutX="133.0" layoutY="252.0" prefHeight="31.0" prefWidth="270.0">
+                     <font>
+                        <Font name="Century Gothic Bold Italic" size="18.0" />
+                     </font></JFXTextField>
+                  <JFXButton fx:id="show" layoutX="185.0" layoutY="353.0" onMouseClicked="#ShowALLPro" styleClass="btn-login" stylesheets="@style.css" text="SHOW">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+            <JFXButton fx:id="backpro" layoutX="112.0" layoutY="604.0" onMouseClicked="#openMainMenu" prefHeight="31.0" prefWidth="81.0" style="-fx-background-color: #FFF; -fx-background-radius: 10px;" text="BACK">
+               <font>
+                  <Font name="Cambria Math" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finaaal.PlumberViewController">
+   <children>
+      <AnchorPane fx:id="anchorPanePlum" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" styleClass="about-bg" stylesheets="@style.css">
+         <children>
+            <TableView fx:id="PPlumber" layoutX="401.0" layoutY="52.0" prefHeight="623.0" prefWidth="789.0">
+              <columns>
+                <TableColumn fx:id="serial" prefWidth="75.0" text="Serial" />
+                <TableColumn fx:id="name" prefWidth="300.0" text="Name" />
+                  <TableColumn fx:id="phone" prefWidth="173.0" text="Phone" />
+                  <TableColumn fx:id="area" prefWidth="142.0" text="Area" />
+                  <TableColumn fx:id="option" prefWidth="98.0" text="Option" />
+              </columns>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TableView>
+            <ImageView fitHeight="294.0" fitWidth="267.0" layoutX="56.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@plumber.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="back" layoutX="143.0" layoutY="613.0" onMouseClicked="#findMecha" style="-fx-background-color: #fff;" text="BACK">
+               <font>
+                  <Font name="Cambria Math" size="18.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

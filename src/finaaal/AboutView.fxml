@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finaaal.AboutViewController">
+   <children>
+      <AnchorPane fx:id="anchorPaneabout" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" styleClass="about-bg" stylesheets="@style.css">
+         <children>
+            <ImageView fitHeight="596.0" fitWidth="524.0" layoutX="50.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo.png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="628.0" layoutY="163.0" prefHeight="523.0" prefWidth="540.0">
+               <children>
+                  <ImageView fitHeight="510.0" fitWidth="452.0" layoutX="58.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@openabouut.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="171.0" fitWidth="284.0" layoutX="756.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@about.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="aboutBackbtn" layoutX="113.0" layoutY="635.0" onMouseClicked="#openHomePage" prefHeight="31.0" prefWidth="105.0" style="-fx-background-color: #FFF; -fx-border-radius: 20px;" text="BACK">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

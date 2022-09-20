@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="rootPaneMecha" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finaaal.MechanicViewController">
+   <children>
+      <AnchorPane fx:id="anchorPaneMecha" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" styleClass="about-bg" stylesheets="@style.css">
+         <children>
+            <AnchorPane layoutX="506.0" layoutY="119.0" prefHeight="570.0" prefWidth="641.0" style="-fx-background-color: #fff; -fx-background-radius: 25px;">
+               <children>
+                  <ImageView fx:id="electrician" fitHeight="146.0" fitWidth="213.0" layoutX="14.0" layoutY="37.0" onMouseClicked="#openElectricianPage" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@ElectricalEng.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <ImageView fx:id="carMechanic" fitHeight="129.0" fitWidth="126.0" layoutX="257.0" layoutY="14.0" onMouseClicked="#openCarMechanic" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Car.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <ImageView fx:id="carpenter" fitHeight="142.0" fitWidth="146.0" layoutX="50.0" layoutY="196.0" onMouseClicked="#openCarpenter" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Carpenter.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <ImageView fx:id="cleaner" fitHeight="142.0" fitWidth="142.0" layoutX="249.0" layoutY="196.0" onMouseClicked="#openCleaner" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Cleaner.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <ImageView fx:id="mason" fitHeight="150.0" fitWidth="200.0" layoutX="46.0" layoutY="369.0" onMouseClicked="#openMason" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Wall.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <ImageView fx:id="plumber" fitHeight="150.0" fitWidth="200.0" layoutX="245.0" layoutY="369.0" onMouseClicked="#openPlumber" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@plumber.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <ImageView fx:id="hvcac" fitHeight="114.0" fitWidth="140.0" layoutX="439.0" layoutY="31.0" onMouseClicked="#openhvac" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@hvac.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <ImageView fx:id="painter" fitHeight="114.0" fitWidth="126.0" layoutX="445.0" layoutY="210.0" onMouseClicked="#openPainter" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@paint.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <ImageView fx:id="welder" fitHeight="126.0" fitWidth="172.0" layoutX="416.0" layoutY="381.0" onMouseClicked="#openWelder" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@welder.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </ImageView>
+                  <Label layoutX="58.0" layoutY="162.0" text="ELECTRICIAN" textFill="#0a444d">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="248.0" layoutY="162.0" text="CAR MECHANIC" textFill="#0a444d">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="439.0" layoutY="162.0" text="HVAC REPAIRER" textFill="#0a444d">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="68.0" layoutY="338.0" text="CARPENTER" textFill="#0a444d">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="257.0" layoutY="338.0" text="HOUSE CLEANER" textFill="#0a444d">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="472.0" layoutY="338.0" text="PAINTER" textFill="#0a444d">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="85.0" layoutY="521.0" text="MASON" textFill="#0a444d">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="294.0" layoutY="521.0" text="PLUMBER" textFill="#0a444d">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="464.0" layoutY="521.0" text="WELDER">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="434.0" fitWidth="345.0" layoutX="79.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="112.0" fitWidth="463.0" layoutX="582.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@findm.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="FMback" layoutX="170.0" layoutY="585.0" onMouseClicked="#openHomePage" style="-fx-background-color: #fff;" text="BACK" textFill="#030000">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font name="Cambria Math" size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

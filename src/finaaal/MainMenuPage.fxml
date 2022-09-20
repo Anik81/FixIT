@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane fx:id="rootPane2" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finaaal.MainMenuPageController">
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="AnchorPane2" prefHeight="700.0" prefWidth="1200.0" styleClass="mainMenu-bg" stylesheets="@style.css">
+         <children>
+            <ImageView fitHeight="700.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@menu.jpg" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="609.0" layoutY="186.0" prefHeight="489.0" prefWidth="497.0">
+               <children>
+                  <ImageView fx:id="findMec" fitHeight="81.0" fitWidth="447.0" layoutX="26.0" layoutY="14.0" onMouseClicked="#openMechanic" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@findm.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </ImageView>
+                  <ImageView fx:id="profile" fitHeight="67.0" fitWidth="301.0" layoutX="116.0" layoutY="104.0" onMouseClicked="#openProfile" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@profile.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </ImageView>
+                  <ImageView fx:id="credit" fitHeight="86.0" fitWidth="193.0" layoutX="160.0" layoutY="188.0" onMouseClicked="#openCredit" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@credit.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </ImageView>
+                  <ImageView fx:id="about" fitHeight="67.0" fitWidth="162.0" layoutX="176.0" layoutY="331.0" onMouseClicked="#openAbout" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@about.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </ImageView>
+                  <ImageView fx:id="feedback" fitHeight="83.0" fitWidth="242.0" layoutX="135.0" layoutY="269.0" onMouseClicked="#openFeedBack" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@feedback.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </ImageView>
+                  <ImageView fx:id="exit" fitHeight="57.0" fitWidth="162.0" layoutX="186.0" layoutY="410.0" onMouseClicked="#openExit" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@exit.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <ImageView disable="true" fitHeight="173.0" fitWidth="342.0" layoutX="687.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Home.png" />
+               </image>
+               <effect>
+                  <Glow />
+               </effect>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
